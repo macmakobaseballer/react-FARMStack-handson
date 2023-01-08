@@ -10,7 +10,7 @@ export interface UserInfo {
 
 export interface User {
   email: string
-  passward: string
+  password: string
 }
 
 export interface CsrfToken {
