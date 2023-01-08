@@ -19,7 +19,7 @@ export const useMutateAuth = () => {
         history.push('/todo')
       },
       onError: (err: any) => {
-        alert(`${err.response.data.detail}¥n{err.message}`)
+        alert(`${err.response.data.detail}\n${err.message}`)
         if (err.response.data.detail === 'The CSRF token has expired') {
           dispatch(toggleCsrfState())
         }
